@@ -28,7 +28,7 @@ export default function Header({ className }) {
             ))
             }
           </Flex>
-          <Button className="donate__btn" variant="primary" aria-lable="Get Started">
+          <Button className="donate__btn" variant="primary" >
             Get Started
           </Button>
           <MobileDrawer/>
