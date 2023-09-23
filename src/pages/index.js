@@ -18,7 +18,7 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="Innovent Systems™" />
+          <SEO title="Bio Stack™" />
           <Banner />
           <KeyFeature />
           <ServiceSection />

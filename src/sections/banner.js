@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Image, Button,Flex } from 'theme-ui';
+import { Container, Box, Heading, Text, Image, Button, Flex } from 'theme-ui';
 // import BannerImg from 'assets/banner-thumb.png';
 import homeImg from 'assets/home-font.png';
 import bottomShap from 'assets/home-bottom-shape.png';
@@ -14,23 +14,23 @@ export default function Banner() {
       <Container sx={styles.homeBanner.container}>
         <Box sx={styles.homeBanner.contentBox}>
           <Box>
-              <Heading as="h1" sx={styles.homeBanner.heading} variant="heroPirmary">
-                  IT Solutions & Business Services Company
-              </Heading>
-              <Text as="p" sx={{width:'39ch'}} variant="descPrimary">
-                  Check out our website to find great software products and deals!
-                  if you need a website or a web application this is the place to go!
-              </Text>
-              <Button variant="primary"> Explore
+            <Heading as="h1" sx={styles.homeBanner.heading} variant="heroPirmary">
+              IT Solutions & Business Services Company
+            </Heading>
+            <Text as="p" sx={{ width: '39ch' }} variant="descPrimary">
+              Welcome to BIOTACKS: Your Trusted Destination for State-of-the-Art Biometric Devices
+              Enhancing Security and Convenience through Cutting-Edge Biometric Solutions!
+            </Text>
+            <Button variant="primary"> Explore
               <span></span>
-              </Button>
+            </Button>
           </Box>
-          <Box sx={{paddingTop:50}}>
-           <Image src={homeImg} alt="banner"/>
+          <Box sx={{ paddingTop: 50 }}>
+            <Image src={homeImg} alt="banner" />
           </Box>
         </Box>
         <Box sx={styles.homeBanner.b_shape}>
-          <Image src={bottomShap} alt="banner"/>
+          <Image src={bottomShap} alt="banner" />
         </Box>
       </Container>
     </section>
@@ -38,7 +38,7 @@ export default function Banner() {
 }
 
 const styles = {
-  homeBanner : {
+  homeBanner: {
     overflow: 'hidden',
     position: 'relative',
     zIndex: 1,
@@ -50,13 +50,13 @@ const styles = {
       flexDirection: 'row',
       justifyContent: 'center',
     },
-    heading:{
-      fontSize:[35,35,null,null,null,55,55,55],
-      fontWeight:700,
-      textAlign:'left',
-      color:'heading'
+    heading: {
+      fontSize: [35, 35, null, null, null, 55, 55, 55],
+      fontWeight: 700,
+      textAlign: 'left',
+      color: 'heading'
     },
-    b_shape:{
+    b_shape: {
       position: 'absolute',
       bottom: -5,
       left: 0,
@@ -68,20 +68,20 @@ const styles = {
       // width: ['25%', "33%", "50%", null, null, null, null, '100%'],
       mx: 'auto',
       textAlign: 'center',
-      display:'flex',
-      flexDirection:['column', 'column', 'column', 'row', 'row', 'row', 'row', 'row'],
-      alignItems:'center',
+      display: 'flex',
+      flexDirection: ['column', 'column', 'column', 'row', 'row', 'row', 'row', 'row'],
+      alignItems: 'center',
       justifyContent: 'center',
-      paddingTop:'6%',
-      '> div':{
+      paddingTop: '6%',
+      '> div': {
         flex: '0 0 50%',
-        maxWidth:'50%',
-        minHeight:1,
-        pl:15,
-        pr:15
+        maxWidth: '50%',
+        minHeight: 1,
+        pl: 15,
+        pr: 15
       }
       // mb: ['40px', null, null, null, null, 7],
-      
+
     }
   },
   // banner: {

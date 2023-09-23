@@ -10,7 +10,7 @@ export default function Footer() {
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">
-            <Image src={FooterLogo} alt="innovent"/>
+            <Image src={FooterLogo} alt="BioStack"/>
           </Link>
           <Box sx={styles.footer.menus}>
             <nav>
@@ -24,7 +24,7 @@ export default function Footer() {
             </nav>
           </Box>
           <Text sx={styles.footer.copyright}>
-            Copyright by {new Date().getFullYear()} Innovent Solutions
+            Copyright by {new Date().getFullYear()} Bio Stack
            </Text>
         </Box>
       </Container>
