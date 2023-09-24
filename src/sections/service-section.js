@@ -37,58 +37,58 @@ const data = {
   ],
 };
 
-const Skill = ({heading,barWidth = 2}) => {
+const Skill = ({ heading, barWidth = 2 }) => {
   return (
-       <Box pt={4}>
-            <Heading as="h6" variant="title">
-                {heading}
-            </Heading>
-          <Box className="skill" sx={{width:`${barWidth}%`}} />
-      </Box>
+    <Box pt={4}>
+      <Heading as="h6" variant="title">
+        {heading}
+      </Heading>
+      <Box className="skill" sx={{ width: `${barWidth}%` }} />
+    </Box>
   )
 }
 
 export default function ServiceSection() {
-   const [videoOpen,setVideoOpen] = useState(false);
+  const [videoOpen, setVideoOpen] = useState(false);
   const handleClick = (e) => {
-      e.preventDefault();
-      setVideoOpen(true);
+    e.preventDefault();
+    setVideoOpen(true);
   }
   return (
-    <section sx={{variant:"section.services"}}>
+    <section sx={{ variant: "section.services" }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.skills}>
           <Heading as="h6" variant="title">
-             About Our Company
+            About Our Company
           </Heading>
           <Heading as="h2" variant="lead">
-             Providing your business with a quality IT service is our passion.
+            Providing your business with a quality IT service is our passion.
           </Heading>
           <Text as='p'>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, nostrud
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, nostrud
           </Text>
           <Box >
-            <Skill heading="IT Consulting" barWidth={90}/>
-            <Skill heading="Virtual Workstation" barWidth={80}/>
-            <Skill heading="Virtual Workstation" barWidth={70}/>
+            <Skill heading="IT Consulting" barWidth={90} />
+            <Skill heading="Virtual Workstation" barWidth={80} />
+            <Skill heading="Virtual Workstation" barWidth={70} />
           </Box>
         </Box>
 
-        <Box pl="8%"> 
-            <Box className="about-image">
-                <Image src={About} alt="About image"/>
-                <Box className="years-design">
-                  <h2>5</h2>
-                  <h5>Years Experience</h5>
-                </Box>
+        <Box pl="8%">
+          <Box className="about-image">
+            <Image src={About} alt="About image" />
+            <Box className="years-design">
+              <h2>5</h2>
+              <h5>Years Experience</h5>
             </Box>
+          </Box>
 
         </Box>
 
         <Box>
 
         </Box>
-      {/* <Box sx={styles.thumbnail}>
+        {/* <Box sx={styles.thumbnail}>
         <Image src={ServiceThumb} alt="Thumbnail"/>
         <Button sx={styles.videoBtn} 
            onClick={handleClick}
@@ -117,12 +117,12 @@ export default function ServiceSection() {
         </Grid>
         </Box> */}
       </Container>
-      <ModalVideo 
+      {typeof window !== "undefined" && <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
         videoId="iGBERMGMIvc"
-        onClose={()=> setVideoOpen(false)}
-      />
+        onClose={() => setVideoOpen(false)}
+      />}
     </section>
   );
 }
@@ -144,10 +144,10 @@ const styles = {
     py: [0, null, null, 2, null, 7],
     position: 'relative',
   },
-  skills:{
+  skills: {
     width: ['100%', '90%', '535px', null, '57%', '60%', '50%', '50%'],
-    position:'relative',
-    p:[5,null,null,null,null,null,2,5]
+    position: 'relative',
+    p: [5, null, null, null, null, null, 2, 5]
   },
   containerBox: {
     display: 'flex',
@@ -155,18 +155,18 @@ const styles = {
     justifyContent: ['flex-start', null, null, 'space-between'],
     flexDirection: ['column', null, null, 'row'],
     pb: [0, null, null, null, null, 7],
-    '.skill':{
-      minHeight:5,
-      backgroundColor:'primary',
-      mt:2,
-      mb:2,
-      transition:'width 0.5s ease-in-out,heigth 0.5s ease-in-out'
+    '.skill': {
+      minHeight: 5,
+      backgroundColor: 'primary',
+      mt: 2,
+      mb: 2,
+      transition: 'width 0.5s ease-in-out,heigth 0.5s ease-in-out'
     },
-    '.about-image':{
+    '.about-image': {
       position: 'relative',
       textAlign: 'center',
       marginLeft: 0,
-      '.years-design':{
+      '.years-design': {
         position: 'absolute',
         left: -75,
         bottom: 25,
@@ -175,14 +175,14 @@ const styles = {
         background: '#ffffff',
         borderBottom: '2px solid #FF9800',
         boxShadow: '-1px 3px 20px 0px rgb(82 90 101 / 10%)',
-        'h2':{
+        'h2': {
           fontSize: 70,
           fontWeight: 700,
-          background:`url(${slider}) no-repeat`,
+          background: `url(${slider}) no-repeat`,
           backgroundPosition: '47% 53%',
           '-webkitBackgroundClip': 'text',
           '-webkitTextFillColor': 'transparent',
-          margin:0,
+          margin: 0,
           lineHeight: 1.1,
         }
       }
