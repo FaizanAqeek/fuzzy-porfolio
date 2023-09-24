@@ -30,8 +30,8 @@ const data = [
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Web Development',
-    title: 'Web Development',
+    altText: 'Biometric Devices',
+    title: 'Biometric Devices',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },

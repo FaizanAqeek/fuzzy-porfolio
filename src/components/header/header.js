@@ -4,7 +4,8 @@ import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
 // import LogoDark from 'assets/logo.svg';
-import LogoDark from 'assets/logo.png';
+// import LogoDark from 'assets/logo.png';
+import LogoDark from 'assets/Biotacks.png';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 

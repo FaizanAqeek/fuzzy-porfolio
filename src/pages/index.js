@@ -13,22 +13,24 @@ import WorkFlow from '../sections/workflow';
 import Package from '../sections/package';
 import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
+import ProductCard from '../sections/productlist'
 
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
-        <Layout>
-          <SEO title="Bio Stack™" />
-          <Banner />
-          <KeyFeature />
-          <ServiceSection />
-          <Feature />
-          {/* <CoreFeature /> */}
-          <WorkFlow />
-          <Package />
-          <TeamSection />
-          <TestimonialCard />
-        </Layout>
+      <Layout>
+        <SEO title="Bio Stack™" />
+        <Banner />
+        <KeyFeature />
+        <ServiceSection />
+        <Feature />
+        {/* <CoreFeature /> */}
+        <WorkFlow />
+        <ProductCard />
+        <Package />
+        {/* <TeamSection /> */}
+        <TestimonialCard />
+      </Layout>
     </ThemeProvider>
   );
 }

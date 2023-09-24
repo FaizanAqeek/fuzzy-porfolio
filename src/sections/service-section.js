@@ -117,12 +117,12 @@ export default function ServiceSection() {
         </Grid>
         </Box> */}
       </Container>
-      <ModalVideo 
+      {/* <ModalVideo 
         channel="youtube"
         isOpen={videoOpen}
         videoId="iGBERMGMIvc"
         onClose={()=> setVideoOpen(false)}
-      />
+      /> */}
     </section>
   );
 }

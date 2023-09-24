@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "next build && next export",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && next build && next export",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
